@@ -1,26 +1,23 @@
 Selenium Java Automation Script for Daily Monitoring
 
 Overview:
-
 This repository contains a Selenium Java automation script designed for daily monitoring of broken links and images on a website. The script is configured to run on GitHub servers using GitHub Actions based on a scheduled cron time. The results are generated as an Excel report (.xlsx), providing detailed insights into the website's health.
 
 Features:
-
 Broken Link Detection: Verifies the accessibility of all website links.
 Image Validation: Ensures all images on the website load correctly.
 Daily Monitoring: Scheduled to run automatically using GitHub Actions.
 Report Generation: Outputs the results in an easy-to-read Excel file.
 
 Requirements:
-
 No local setup is required. The script runs directly on GitHub servers.
 
-GitHub Actions Setup
+GitHub Actions Setup:
 The automation script is configured to run using a GitHub Actions workflow:
                   a. Scheduled using cron syntax in yml file to execute daily. 
                   b. Leverages GitHub-hosted runners for execution.
 
-Workflow File
+Workflow File:
 The workflow file (.github/workflows/monitoring.yml) is already included in the repository. It specifies:
 
 The schedule for running the script.
