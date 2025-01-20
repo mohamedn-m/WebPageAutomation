@@ -27,7 +27,7 @@ Cron Schedule
 The script runs daily at the configured time using the cron schedule. For example:
 on:  
   schedule:  
-    - cron: '0 8 * * *' # Runs daily at 8 AM UTC 
+     - cron: "30 0 * * *"  # 12:30 AM UTC -> 6:00 AM IST
     
 Output
 Excel Report: After the script runs, the Excel report is generated and saved as an artifact in the workflow.
